@@ -1,10 +1,10 @@
 grabFromDatabase = function() {
     var mysql = require('mysql')
     var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'mysql',
-    password : 'admin',
-    database : 'express_db'
+        host     : 'localhost',
+        user     : 'mysql',
+        password : 'admin',
+        database : 'express_db'
     });
 
     connection.connect()
