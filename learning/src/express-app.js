@@ -32,10 +32,18 @@ app.post('/add', function(req, res) {
     connection.query(sql, [values],
         function(err, result) {
             if (err) {
-                throw err;
+                //throw err;
+                switch (err['code']) {
+                    case 'ER_DUP_ENTRY':
+                        res.send('The user is not unique');
+                    default:
+                        res.send('An error has occured');
+                }
             }
-            res.send('User added to db');
-            console.log('Add success');
+            else {
+                res.send('User added to db');
+                console.log('Add success');
+            }
         }
     );
 })
