@@ -1,8 +1,6 @@
-import { secretButton, secretParagraph} from './dom-loader';
+//import { secretButton, secretParagraph} from './dom-loader';
 
-import Vue from '../node_modules/vue/dist/vue.min.js';
-
-var showSecret = false;
+/*var showSecret = false;
 
 secretButton.addEventListener('click', toggleSecretState);
 updateSecretParagraph();
@@ -29,22 +27,4 @@ function updateSecretParagraph() {
     } else {
         secretParagraph.style.display = 'none';
     }
-}
-
-var app = new Vue({
-    el: '#myApp',
-    data: {
-        message: "Box is hidden"
-    },
-    methods: {
-        updateMessage: function(what) {
-            if (what) {
-                this.message = "Box ain't hidden";
-            }
-            else {
-                this.message = "Box is hidden";
-            }
-            
-        }
-    }
-})
+}*/

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script type="text/javascript" src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>
+            {{usernameText}} <input type="text" v-model="username"/>
+        </p>
+        <p>
+            {{passwordText}} <input type="password" v-model="password"/>
+        </p>
+
+        {{username}}
+        {{password}}
+    </div>
+    
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                usernameText: "Enter your username: ",
+                passwordText: "Enter your password: ",
+                username: '',
+                password: ''
+            }
+        })
+    </script>
+</body>
+</html>
