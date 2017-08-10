@@ -1,6 +1,7 @@
 <html>
 <head>
     <script type="text/javascript" src="../../node_modules/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="../js/create-user.js"></script>
 </head>
 <body>
     <div id="app">
@@ -14,17 +15,5 @@
         {{username}}
         {{password}}
     </div>
-    
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                usernameText: "Enter your username: ",
-                passwordText: "Enter your password: ",
-                username: '',
-                password: ''
-            }
-        })
-    </script>
 </body>
 </html>

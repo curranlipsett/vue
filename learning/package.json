@@ -9,6 +9,7 @@
     "build": "webpack-dev-server --entry ./src/app.js --output-filename ./dist/bundle.js -p --hot --inline"
   },
   "dependencies": {
+    "browserify": "^14.4.0",
     "express": "^4.15.3",
     "mysql": "^2.13.0",
     "vue": "^2.3.3"
